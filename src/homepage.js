@@ -1,31 +1,4 @@
-//Global variables
-const addElement = (container, element) => {
-  container.appendChild(element);
-};
-
-const createLi = (textContent, id) => {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
-  a.textContent = textContent;
-  a.id = id;
-  addElement(li, a);
-  return li;
-};
-
-const createImage = (source) => {
-  const img = document.createElement("img");
-  img.src = source;
-  return img;
-};
-
-const createDiv = (divType, className, id, textContent, container) => {
-  const div = document.createElement(divType);
-  className != "" ? div.classList.add(className) : 0;
-  id == "" ? 0 : (div.id = id);
-  div.textContent = textContent;
-  container != "" ? addElement(container, div) : 0;
-  return div;
-};
+import { createDiv, addElement, createImage } from "./functions";
 
 const homePage = () => {
   const mainContent = createDiv("main", "", "", "", "");
@@ -101,4 +74,3 @@ const homePage = () => {
 };
 
 export default homePage;
-export { createDiv, addElement, createImage, createLi };

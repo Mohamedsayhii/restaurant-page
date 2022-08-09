@@ -1,4 +1,4 @@
-import { createDiv, createImage, createHeader, createFooter } from "./homepage";
+import { createDiv, createImage } from "./functions";
 
 const menuPage = () => {
   const menuItem = (imageSource, itemTitle) => {

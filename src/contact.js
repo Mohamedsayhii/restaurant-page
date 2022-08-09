@@ -1,4 +1,4 @@
-import { createDiv, createImage } from "./homepage";
+import { createDiv, createImage } from "./functions";
 
 const contactPage = () => {
   const mainContent = createDiv("main", "contact-main", "", "", "");
